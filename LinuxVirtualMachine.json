@@ -200,6 +200,7 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[resourceGroup().location]",
+      "plan": "[variables('plan')]",
       "tags": {
         "displayName": "VirtualMachine"
       },
