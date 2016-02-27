@@ -50,55 +50,55 @@
     "planZsDev850": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-u-php5_6",
+      "name": "zs-d-00-u-php5_6",
       "version": "8.5.00"
     },
     "planZsDev851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-u-php5_6",
+      "name": "zs-d-00-u-php5_6",
       "version": "8.5.1"
     },
     "planZsDev852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-u-php5_6",
+      "name": "zs-d-00-u-php5_6",
       "version": "8.5.2"
     },
     "planZsPro800": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-p-php5_6",
+      "name": "zs-d-00-p-php5_6",
       "version": "8.5.0"
     },
     "planZsPro851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-p-php5_6",
+      "name": "zs-d-00-p-php5_6",
       "version": "8.5.1"
     },
     "planZsPro852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-p-php5_6",
+      "name": "zs-d-00-p-php5_6",
       "version": "8.5.2"
     },
     "planZsEnt800": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-e-php5_6",
+      "name": "zs-d-00-e-php5_6",
       "version": "8.5.0"
     },
     "planZsEnt851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-e-php5_6",
+      "name": "zs-d-00-e-php5_6",
       "version": "8.5.1"
     },
     "planZsEnt852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "sku": "zs-d-00-e-php5_6",
+      "name": "zs-d-00-e-php5_6",
       "version": "8.5.2"
     },
     "addressPrefix": "10.0.0.0/16",
