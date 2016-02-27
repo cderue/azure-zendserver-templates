@@ -44,62 +44,108 @@
   "variables": {
     "imagePublisher": "zend",
     "imageOffer": "php-zend-server",
+    "imageReference": "[variables(concat('imageReference', parameters('zendServer')))]",
+    "imageReferenceZsDev850": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-d-00-u-php5_6",
+      "version": "8.5.00"
+    },
+    "imageReferenceZsDev851": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-d-00-u-php5_6",
+      "version": "8.5.1"
+    },
+    "imageReferenceZsDev852": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-d-00-u-php5_6",
+      "version": "8.5.2"
+    },
+    "imageReferenceZsPro850": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-p-00-u-php5_6",
+      "version": "8.5.00"
+    },
+    "imageReferenceZsPro851": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-p-00-u-php5_6",
+      "version": "8.5.1"
+    },
+    "imageReferenceZsPro852": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-p-00-u-php5_6",
+      "version": "8.5.2"
+    },
+    "imageReferenceZsEnt850": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-e-00-u-php5_6",
+      "version": "8.5.00"
+    },
+    "imageReferenceZsEnt851": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-e-00-u-php5_6",
+      "version": "8.5.1"
+    },
+    "imageReferenceZsEnt852": {
+      "offer": "[variables('imageOffer')]",
+      "publisher": "[variables('imagePublisher')]",
+      "sku": "zs-e-00-u-php5_6",
+      "version": "8.5.2"
+    },
     "OSDiskName": "osdiskforzendserver",
     "nicName": "myVMNic",
     "plan": "[variables(concat('plan', parameters('zendServer')))]",
     "planZsDev850": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-u-php5_6",
-      "version": "8.5.00"
+      "name": "zs-d-00-u-php5_6"
     },
     "planZsDev851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-u-php5_6",
-      "version": "8.5.1"
+      "name": "zs-d-00-u-php5_6"
     },
     "planZsDev852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-u-php5_6",
-      "version": "8.5.2"
+      "name": "zs-d-00-u-php5_6"
     },
     "planZsPro800": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-p-php5_6",
-      "version": "8.5.0"
+      "name": "zs-d-00-p-php5_6"
     },
     "planZsPro851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-p-php5_6",
-      "version": "8.5.1"
+      "name": "zs-d-00-p-php5_6"
     },
     "planZsPro852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-p-php5_6",
-      "version": "8.5.2"
+      "name": "zs-d-00-p-php5_6"
     },
     "planZsEnt800": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-e-php5_6",
-      "version": "8.5.0"
+      "name": "zs-d-00-e-php5_6"
     },
     "planZsEnt851": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-e-php5_6",
-      "version": "8.5.1"
+      "name": "zs-d-00-e-php5_6"
     },
     "planZsEnt852": {
       "publisher": "[variables('imagePublisher')]",
       "product": "[variables('imageOffer')]",
-      "name": "zs-d-00-e-php5_6",
-      "version": "8.5.2"
+      "name": "zs-d-00-e-php5_6"
     },
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
@@ -218,7 +264,7 @@
           "adminPassword": "[parameters('adminPassword')]"
         },
         "storageProfile": {
-          "imageReference": "[variables(concat('plan', parameters('zendServer')))]",
+          "imageReference": "[variables('imageReference')]",
           "osDisk": {
             "name": "osdisk",
             "vhd": {
