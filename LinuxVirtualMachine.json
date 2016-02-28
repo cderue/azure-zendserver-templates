@@ -42,7 +42,7 @@
     },
     "fileUris": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "https://raw.githubusercontent.com/cderue/azure-zendserver-templates/master/bootstrapZs.sh https://raw.githubusercontent.com/cderue/azure-zendserver-templates/master/foo.sh",
       "metadata": {
         "description": "The uri list of files. Split by a space."
       }
