@@ -49,6 +49,7 @@
     },
     "commandToExecute": {
       "type": "string",
+      "defaultValue": "./bootstrapZs.sh",
       "metadata": {
         "description": "The command to execute."
       }
