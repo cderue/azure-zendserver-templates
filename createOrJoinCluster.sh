@@ -17,6 +17,7 @@ sudo /usr/local/zend/bin/zs-manage	bootstrap-single-server	-p "$zendadmin_ui_pas
 ## Restart Zend	Server
 sudo /usr/local/zend/bin/zendctl.sh	restart
 web_api_key=`sqlite3 /usr/local/zend/var/db/gui.db "select	HASH from GUI_WEBAPI_KEYS where NAME='admin';"`
+sudo /usr/local/zend/bin/zs-manage restart -N admin -K "$web_api_key"
 sudo /usr/local/zend/bin/zs-manage server-add-to-cluster -n "$zend_self_name" -i "$zend_self_addr" -o "$zend_db_host" -u "$zend_db_user" -p "$zend_db_password" -d "$zend_db_name" -K "$web_api_key" -N "admin"
 sudo /usr/local/zend/bin/zs-manage restart -N admin -K "$web_api_key"
 $ command -v foo > /dev/null 2>&1 || { echo >&2 "I require foo but it's not installed. Aborting."; exit 1; }
